@@ -16,7 +16,7 @@ class Settings:
 
         self.project_root = Path(os.getenv("PROJECT_ROOT", project_root))
         self.raw_dir = Path(os.getenv("RAW_DIR", self.project_root / "raw"))
-        self.index_dir = Path(os.getenv("INDEX_DIR", self.project_root / "faiss_index"))
+        self.index_dir = Path(os.getenv("INDEX_DIR", backend_root / "faiss_index"))
         self.index_file = self.index_dir / "index.faiss"
         self.store_file = self.index_dir / "store.json"
 

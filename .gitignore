@@ -7,5 +7,5 @@ __pycache__/
 *.pyc
 node_modules/
 .next/
-# faiss_index/index.faiss
-# faiss_index/store.json
+# backend/faiss_index/index.faiss
+# backend/faiss_index/store.json
