@@ -130,7 +130,11 @@ export default function Home() {
         {isPending && (
           <article className={styles.message} data-role="assistant">
             <div className={styles.messageHeader}><span>Assistant</span></div>
-            <div className={styles.messageBubble}>Thinking…</div>
+            <div className={styles.messageBubble}>
+              <span className={styles.thinking}>
+                <span /><span /><span />
+              </span>
+            </div>
           </article>
         )}
       </div>
